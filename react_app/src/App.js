@@ -2,17 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  let id=100;
-  let name="Rohini";
-
+  let title="Good Morning";
+  let list=["Amravati","Akola","Malegaon","Nanded","Goa"];
   return (
-    <div>
-    <h1> {name} {id} </h1>
-    <h1>Are you with me</h1>
-    <h1>Are you with me</h1>
-  </div>);
- 
-  
+  <div>
+    <h1>{title}</h1>
+    <h1>{list}</h1>
+    </div>
+  )
 }
 
 export default App;
