@@ -2,19 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  // data member
-  let title="Event demo";
-  // member function
-  let myfunc=()=>{
-    alert("I am click handlerd");
+  let list =["Hello","Hello"];
+  const addNewHello = ()=>{
+    list.push("Hello buddy");
+    console.log(list);
   };
-  // bining the members inside the jsx{}
-
-return(
-  <div>
-    <h1>{title} </h1>
-    <input type="button" value="Clcick Me" onClick={myfunc} />
-  </div>
-);
+  return (
+    <div>
+      <h1>
+        Working with events and list
+      </h1>
+      <input type="button" value="Say hello" onClick={addNewHello} />
+      {list.map((item) =>{
+        return <h3>{item} </h3>;
+      })}
+    </div>
+  );
 }
 export default App;
